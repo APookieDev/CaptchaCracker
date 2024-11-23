@@ -5,8 +5,9 @@ import re
 import numpy as np
 from PIL import Image
 import io
-import os
 import warnings
+import os
+
 warnings.filterwarnings('ignore')
 
 # Initialize Flask app
@@ -123,5 +124,5 @@ def solve_captcha():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 10000))  # Use the port assigned by Render
+    port = int(os.environ.get('PORT', 10000))
     app.run(host='0.0.0.0', port=port)
