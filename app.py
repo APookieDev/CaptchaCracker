@@ -10,7 +10,7 @@ import os
 
 warnings.filterwarnings('ignore')
 
-# Initialize Flask app
+
 app = Flask(__name__)
 
 # Initialize the OCR reader globally
