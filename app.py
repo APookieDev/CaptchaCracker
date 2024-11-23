@@ -5,6 +5,7 @@ import re
 import numpy as np
 from PIL import Image
 import io
+import os
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -122,4 +123,5 @@ def solve_captcha():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=10000)
+    port = int(os.environ.get('PORT', 10000))  # Use the port assigned by Render
+    app.run(host='0.0.0.0', port=port)
