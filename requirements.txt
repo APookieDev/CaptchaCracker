@@ -4,4 +4,4 @@ opencv-python-headless==4.8.0.76
 easyocr==1.7.1
 Pillow==10.0.0
 torch==2.1.0
-torchvision==0.16.0
+torchvision==0.16.0 
